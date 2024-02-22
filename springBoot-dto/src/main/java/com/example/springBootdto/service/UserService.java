@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
 public class UserService {
     @Autowired
     private UserRepository userRepository;
-    public List<UserLocationDTO> getAllUsers(){
+    public List<UserLocationDTO> getAllUsersLocation(){
         return userRepository.findAll()
                 .stream()
                 .map(this::convertEntityToDto)
