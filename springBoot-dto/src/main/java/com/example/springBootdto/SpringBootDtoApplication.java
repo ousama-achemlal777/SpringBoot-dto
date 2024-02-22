@@ -33,6 +33,7 @@ public class SpringBootDtoApplication implements CommandLineRunner {
 		user1.setLastName("ach");
 		user1.setFirstName("oussama");
 		user1.setPassword("secret");
+		user1.setLocation(location);
 		userRepository.save(user1);
 
 		User user2 = new User();
@@ -40,6 +41,7 @@ public class SpringBootDtoApplication implements CommandLineRunner {
 		user2.setLastName("ach");
 		user2.setFirstName("ahmed");
 		user2.setPassword("secret");
+		user2.setLocation(location);
 		userRepository.save(user2);
 
 
